@@ -1,0 +1,8 @@
+.container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(4, 4, 180, 0.772);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}

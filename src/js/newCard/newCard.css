@@ -1,0 +1,21 @@
+.new-card {
+    /* width: 100%; */
+}
+
+.text {
+    width: 98%;
+    max-width: 98%;
+    min-width: 98%;
+    border-radius: 4px;
+}
+
+.new-card-footer {
+    display: flex;
+}
+
+.submit {
+    background-color: green;
+    border-radius: 4px;
+    margin-right: 10px;
+    color: #ffffff;
+}

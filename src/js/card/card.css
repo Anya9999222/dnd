@@ -1,0 +1,32 @@
+.card {
+    width: 97%;
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+.card:hover .delete::after {
+
+    content: "\26CC";
+    border-radius: 2px;
+    background-color: gray;
+    position: relative;
+    right: 2px;
+    top: 2px;
+}
+
+.card.dragged {
+    border-radius: 10px;
+    z-index: 999;
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    width: 200px; 
+}
+.card:focus {
+    cursor: grabbing;
+}
