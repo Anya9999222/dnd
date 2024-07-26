@@ -6,3 +6,7 @@
     justify-content: space-between;
     padding: 10px;
 }
+
+.card.additional {
+    background-color: transparent;
+}
