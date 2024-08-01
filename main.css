@@ -1,0 +1,88 @@
+.container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(4, 4, 180, 0.772);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.additional {
+    background-color: transparent;
+}
+.card {
+    width: 97%;
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+.card:hover .delete::after {
+    content: "\26CC";
+    border-radius: 2px;
+    background-color: gray;
+    position: relative;
+    right: 2px;
+    top: 2px;
+}
+
+.card.dragged {
+    border-radius: 10px;
+    z-index: 999;
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    width: 200px; 
+}
+.card:focus {
+    cursor: grabbing;
+}
+.new-card {
+    /* width: 100%; */
+}
+
+.text {
+    width: 98%;
+    max-width: 98%;
+    min-width: 98%;
+    border-radius: 4px;
+}
+
+.new-card-footer {
+    display: flex;
+}
+
+.submit {
+    background-color: green;
+    border-radius: 4px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+.column {
+    width: 30%;
+    background-color: rgb(179, 179, 179);
+    padding: 8px 5px;
+}
+
+.column-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    cursor: default;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.column-footer{
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
