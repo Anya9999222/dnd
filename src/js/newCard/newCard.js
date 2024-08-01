@@ -49,7 +49,7 @@ export default class NewCard {
 
     const onSubmit = (e) => {
       e.preventDefault();
-      const text = document.querySelector(NewCard.textSelector);
+      const text = this.element.querySelector(NewCard.textSelector);
       const parent = text.closest(".column");
       const card = new Card(parent, text.value);
       card.bindToDOM();

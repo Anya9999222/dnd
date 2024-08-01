@@ -7,6 +7,6 @@
     padding: 10px;
 }
 
-.card.additional {
-    background-color: transparent;
+.additional {
+    background-color: red;
 }
